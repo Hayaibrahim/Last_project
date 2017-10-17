@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".EditorActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_name"
+            style="@style/EditorFieldStyle"
+            android:text="Name" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_product_name"
+            android:inputType="textCapWords" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_price"
+            style="@style/EditorUnitsStyle"
+            android:text="@string/price_label" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_product_price"
+            android:inputType="number" />
+        <!-- Units for price -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_price_units"
+            style="@style/EditorUnitsStyle"
+            android:text="@string/unit_product_price" />
+    </LinearLayout>
+
+    <!-- Quantity field -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_quantity"
+            style="@style/EditorUnitsStyle"
+            android:text="@string/quantity_label" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantity"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_product_quantity"
+            android:inputType="numberDecimal" />
+        <!-- Units for quantity -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_quantity_units"
+            style="@style/EditorUnitsStyle"
+            android:text="@string/unit_product_quantity" />
+    </LinearLayout>
+
+    <!-- Supplier field -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_supplier"
+            style="@style/EditorUnitsStyle"
+            android:text="@string/supplier_label" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/supplier"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_product_supplier"
+            android:inputType="textCapWords" />
+    </LinearLayout>
+
+    <!-- Image field -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_image"
+            style="@style/EditorUnitsStyle"
+            android:text="@string/image_label" />
+
+        <ImageView
+            android:id="@+id/editor"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/image" />/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/Add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/plus_button_label"/>
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/minus_button_label"/>
+        <Button
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/order_button_label"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</ScrollView>
