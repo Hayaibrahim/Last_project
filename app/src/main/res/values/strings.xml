@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">Last</string>
     <string name="action_settings">Settings</string>
-    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+    <string name="action_insert_dummy_data">Insert  Data</string>
 
-     <string name="action_delete_all_entries">Delete All Products</string>
+    <string name="action_delete_all_entries">Delete All  </string>
     <string name="empty_view_title_text">It\'s a bit lonely here...</string>
 
-     <string name="empty_view_subtitle_text">Get started by adding a product</string>
+    <string name="empty_view_subtitle_text"> add a product</string>
 
      <string name="editor_activity_title_new_product">Add a Product</string>
 

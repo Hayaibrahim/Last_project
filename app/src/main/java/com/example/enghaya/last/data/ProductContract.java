@@ -9,19 +9,13 @@ import android.provider.BaseColumns;
  */
 
 public class ProductContract { // To prevent someone from accidentally instantiating the contract class,
+    public static final String CONTENT_AUTHORITY = "java.lang.IllegalArgumentException: Unknown URL content:/products\n";
+    public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
+    public static final String PATH_PRODUCTS = "products";
+
     // give it an empty constructor.
     private ProductContract() {
     }
-
-    public static final String CONTENT_AUTHORITY = "com.example.android.inventory";
-
-    /**
-     * Use CONTENT_AUTHORITY to create the base of all URI's which apps will use to contact
-     * the content provider.
-     */
-    public static final Uri BASE_CONTENT_URI = Uri.parse("content:" + CONTENT_AUTHORITY);
-
-    public static final String PATH_PRODUCTS = "products";
 
     /**
      * Inner class that defines constant values for the products database table.
